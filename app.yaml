@@ -1,0 +1,9 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+
+env_variables:
+  SPEECH_API_KEY: "<your key goes here>"
