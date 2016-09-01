@@ -28,7 +28,7 @@ $ goapp deploy --application=<yourprojecthere> --version=<yourversionhere>
 
 ### Other notes:
 
-While the JustForFunc tutorial is, of course, about magically opening the building gate, my code simply checks whether the user has supplied the right password. Otherwise, it is possible to follow along using this repo.
+While the JustForFunc tutorial is --of course-- about magically opening the building gate, my code simply checks whether the user has supplied the right password. Otherwise it is possible to follow along using this repo.
 
 As is mentioned in the tutorial, an easier route for hooking up both external services during development is to use [ngrok](http://ngrok.io).
 
