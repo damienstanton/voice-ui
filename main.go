@@ -53,6 +53,12 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	// Transcribe the audio and check the results
 	c := appengine.NewContext(r)
+
+	// Some additional logging
+	for k, v := range r.PostForm {
+		log.Infof(c, "%s: %v", k, v)
+	}
+
 	text, err := transcribe(c, rec)
 	if err != nil {
 		http.Error(w, "could not transcribe", http.StatusInternalServerError)
