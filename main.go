@@ -1,6 +1,6 @@
-// Package voice is a demonstration of a home-grown speech recognition engine
+// Program voice-ui is a demonstration of a home-grown speech recognition engine
 // using a few Google technologies: Speech API, App Engine, Go.
-package voice
+package main
 
 import (
 	"bytes"
@@ -14,12 +14,12 @@ import (
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/log"
 	"google.golang.org/appengine/urlfetch"
-	// GAE has an old version of Go, hence the old version of net/context.
-	"golang.org/x/net/context"
+
+	"context"
 )
 
 // In a non-GAE app, this would be the main func
-func init() {
+func main() {
 	http.HandleFunc("/", handler)
 }
 
